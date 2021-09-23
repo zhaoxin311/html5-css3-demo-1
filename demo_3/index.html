@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构伪类选择器</title>
+  <style type="text/css">
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+  /* 清除浮动 */
+  .clearfix{
+    clear: both;
+    overflow: auto;
+  }
+  .demo{
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  .demo li {
+    float: left;
+    list-style: none;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin-right: 4px;
+    width: 20px;
+  }
+  .demo a{
+    /* 行元素变为块元素，才能设置宽高 */
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f36;
+    /* 去掉链接下划线 */
+    text-decoration: none; 
+  }
+  .demo li:nth-child(2n){
+    background-color: #444;
+  }
+  </style>
+</head>
+<body>
+  <div class="demo clearfix">
+    <ul class="clearfix">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">9</a></li>
+      <li><a href="">0</a></li>
+    </ul>
+  </div>
+  <div class="des">
+    <span>(1):first-child  选择某个元素的第一个子元素</span><br>
+    <span>(2):last-child  选择某个元素的最后一个子元素</span><br>
+    <span>(3):nth-child()  选择某个元素的一个或多个特定的子元素,括号内数字灵活运用</span><br>
+    <span>(4):nth-last-child()  选择某个元素的一个或多个特定的子元素，从这个元素的最后一个元素开始算（倒着数第几个）</span><br>
+    <span>(5):nth-of-type()  选择指定的元素</span><br>
+    <span>(6):nth-last-of-type()  选择指定的元素，从元素的最后一个开始计算</span><br>
+    <span>(7):first-of-type  选择一个上级元素下的第一个同类子元素</span><br>
+    <span>(8):last-of-type  选择一个上级元素下的最后一个同类子元素</span><br>
+    <span>(9):only-child  选择的元素是他的父元素的唯一一个子元素</span><br>
+    <span>(10):only-of-type  选择的元素是他的上级元素的唯一一个子元素</span><br>
+    <span>(11):empty  选择的元素里面没有任何内容</span><br>
+  </div>
+</body>
+</html>

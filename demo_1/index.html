@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo_1</title>
+</head>
+<body>
+  <img src="./touxiang.jpg">
+  <style type="text/css">
+    body{
+      text-align: center;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      /* 
+      transition:过渡属性 all 过渡所有属性 0.5s完成
+      */
+      transition:all 0.5s ;
+      
+      /* 
+      鼠标在进入时，有箭头变为手指
+      */
+      cursor: pointer;
+    }
+    /* hover：鼠标进入 */
+    img:hover{
+      /* 
+      transform:变形属性
+      scale：缩放属性，缩放1.1倍 
+      */
+      transform: scale(1.1);
+    }
+  </style>
+</body>
+</html>
