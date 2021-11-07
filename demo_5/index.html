@@ -10,6 +10,50 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <form action="111.vue" method="get">
+    <!-- text 文本框 用户用于输入任何文本文字 默认长度为20 -->
+    <label for="username">用户名：</label>
+    <input id="username" type="text" maxlength="5" value="最长字符为5" ><br>
+    <!-- password 密码字段 字符会被掩码 -->
+    密码：<input type="password"><br>
+    <!-- radio 单选按钮 name必须相同才能单选  checked首次加载被选中-->
+    单选按钮：
+    1<input type="radio" name="1" value="1">
+    2<input type="radio" name="1" value="2" checked>
+    3<input type="radio" name="1" value="3"><br>
+    <!-- CheckBox 复选框 -->
+    复选框:
+    <label for="1">1</label>
+    <input id="1" type="checkbox" name="box" value="1">
+    <label for="2">2</label>
+    <input id="2" type="checkbox" name="box" value="2">
+    <label for="3">3</label>
+    <input id="3" type="checkbox" name="box" value="3">
+    <br>
+    <!-- file 输入字段和‘浏览’按钮 供文件上传 -->
+    文件上传：<input type="file"><br>
+    <!-- hidden 定义隐藏的输入字段 -->
+    隐藏的输入字段<input type="hidden" value="2222"><br>
+    <!-- image 定义图像形式的提交按钮 -->
+    图像：<input type="image"><br>
+    <!-- button 普通按钮 -->
+    <input type="button" value="获取短信验证码">
+    <!-- reset 重置按钮 用于清空表单的所有数据 -->
+    <input type="reset">
+    <!-- submit 提交按钮 提交表单信息发送到服务器 -->
+    <input type="submit" >
+    <hr>
+    <label>选择城市</label>
+    <select >
+      <option value="1">1</option>
+      <option selected value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <hr>
+   <label> 文本域：</label><br>
+    <textarea name="" id="" cols="50" rows="10">今日反馈</textarea>
+  </form>
 </body>
 </html>
